@@ -6,7 +6,9 @@ const { Category, Product } = require('../../models');
 router.get('/', async (req, res) => {
   // find all categories
   try {
-    const categoryData = await Category.findAll();
+    const categoryData = await Category.findAll({
+      include: [{ model: Product}]
+    });
     res.status(200).json(categoryData);
   } catch (err) {
     res.status(500).json(err);
@@ -22,12 +24,10 @@ router.get('/:id', async (req, res) => {
       // JOIN with travellers, using the Trip through table
       include: [{ model: Product}]
     });
-
     if (!categoryData) {
       res.status(404).json({ message: 'No category found with this id!' });
       return;
     }
-
     res.status(200).json(categoryData);
   } catch (err) {
     res.status(500).json(err);
