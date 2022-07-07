@@ -21,7 +21,7 @@ The back end includes API routes for Categories, Products and Tags:
             - EX:
                 {
 
-                "category_name": "Socks"
+                    "category_name": "Socks"
 
                 }
         - DELETE: http://localhost:3001/api/categories/5 (input any id between 1-5) 
