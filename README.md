@@ -1,4 +1,4 @@
-# e-comm
+# E-COMMERCE BACK END
 
 ## Description
 Build a back end for an e-commerce website in order to be able to compete with other e-commerce companies.  
@@ -34,7 +34,7 @@ The back end includes API routes for Categories, Products and Tags:
                 "category_name": "Socks"
 
                 }
-        - DELETE: http://localhost:3001/api/categories/6 (input any id between 1-5) 
+        - DELETE: http://localhost:3001/api/categories/5 (input any id between 1-5) 
         - PUT: http://localhost:3001/api/categories/2 (input any id between 1-5)
     - TAGS
         - GET ALL: http://localhost:3001/api/tags
@@ -46,8 +46,8 @@ The back end includes API routes for Categories, Products and Tags:
                 "tag_name": "Computer"
 
                 }
-        - DELETE: http://localhost:3001/api/tags/9 (input any id between 1-8)
-        - PUT: http://localhost:3001/api/tags/10 (input any id between 1-8)
+        - DELETE: http://localhost:3001/api/tags/8 (input any id between 1-8)
+        - PUT: http://localhost:3001/api/tags/7 (input any id between 1-8)
     - PRODUCTS
         - GET ALL: http://localhost:3001/api/products
         - GET BY ID: http://localhost:3001/api/products/1 (input any id between 1-5)
@@ -56,9 +56,9 @@ The back end includes API routes for Categories, Products and Tags:
                  {
 
                     "product_name": "Soccer Ball",
-                     "price": 200.00,
+                    "price": 200.00,
                     "stock": 3,
-                    "tagIds": [10]
+                    "tagIds": [1, 2, 3, 4]
 
                 }
         - DELETE: http://localhost:3001/api/products/4 (input any id between 1-5)
@@ -67,4 +67,4 @@ The back end includes API routes for Categories, Products and Tags:
 ## Links 
 GitHub: https://github.com/MaSaLo13/e-comm
 
-Walkthrough Video: https://drive.google.com/file/d/1-0EdxTHIwQIen18HXoKMbZY80l_CN8Of/view
+Walkthrough Video: https://drive.google.com/file/d/1xttbloK2h1Lh9rFVC5MVamEVHU8aOlSX/view
