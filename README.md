@@ -23,6 +23,7 @@ The back end includes API routes for Categories, Products and Tags:
 - open server.js in terminal, then type " node seeds/index.js " in order to populate database 
 - Now that database is populated, run your server in terminal (node server.js)
 - Open Insomnia in order to GET, POST, PUT, DELETE: Categories, Tags and Products. 
+- Make sure that text is in JSON 
     - CATEGORIES 
         - GET ALL: http://localhost:3001/api/categories
         - GET BY ID: http://localhost:3001/api/categories/1 (input any id between 1-5)
@@ -66,4 +67,4 @@ The back end includes API routes for Categories, Products and Tags:
 ## Links 
 GitHub: https://github.com/MaSaLo13/e-comm
 
-Walkthrough Video: 
+Walkthrough Video: https://drive.google.com/file/d/1-0EdxTHIwQIen18HXoKMbZY80l_CN8Of/view
