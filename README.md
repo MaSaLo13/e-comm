@@ -11,13 +11,6 @@ The back end includes API routes for Categories, Products and Tags:
 ## Installation 
 - Git Clone repository 
 - Open file in VS Code 
-- Download 
-    - package.json (npm init -y)
-    - package-lock.json and node modules (npm i)
-    - express (npm i express)
-    - dotenv (npm i dotenv)
-    - mysql2 (npm i mysql2)
-    - sequelize (npm i sequelize)
 - Create a .env file and put in your username and password. Also add the DB_NAME which is ecommerce_db (will be found in db file under schema.sql)
 - Watch Walktrough Video for on how to invoke e-commerce back end
 - The following are links for Categories, Tags and Products: 
@@ -33,6 +26,12 @@ The back end includes API routes for Categories, Products and Tags:
                 }
         - DELETE: http://localhost:3001/api/categories/5 (input any id between 1-5) 
         - PUT: http://localhost:3001/api/categories/2 (input any id between 1-5)
+            - EX: 
+                {
+
+	                "category_name": "Laptop"
+
+                }
     - TAGS
         - GET ALL: http://localhost:3001/api/tags
         - GET BY ID: http://localhost:3001/api/tags/1 (input any id between 1-8)
@@ -40,11 +39,17 @@ The back end includes API routes for Categories, Products and Tags:
             - EX: 
                 {
 
-                "tag_name": "Computer"
+                    "tag_name": "Computer"
 
-            }
+                }
         - DELETE: http://localhost:3001/api/tags/8 (input any id between 1-8)
         - PUT: http://localhost:3001/api/tags/7 (input any id between 1-8)
+            - EX: 
+                {
+
+	                "tag_name": "Laptops"
+
+                }
     - PRODUCTS
         - GET ALL: http://localhost:3001/api/products
         - GET BY ID: http://localhost:3001/api/products/1 (input any id between 1-5)
@@ -57,9 +62,18 @@ The back end includes API routes for Categories, Products and Tags:
                     "stock": 3,
                     "tagIds": [1, 2, 3, 4]
 
-                }
+                 }
         - DELETE: http://localhost:3001/api/products/4 (input any id between 1-5)
         - PUT: http://localhost:3001/api/products/5 (input any id between 1-5)
+            - EX: 
+                {
+
+                    "product_name": "BasketBall",
+                    "price": 100.00,
+                    "stock": 5,
+                    "tagIds": [1, 2, 3]
+   
+                }
 
 ## Links 
 GitHub: https://github.com/MaSaLo13/e-comm
